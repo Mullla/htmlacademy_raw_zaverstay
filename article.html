@@ -1,0 +1,124 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой блог</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .header{
+      background-image: url("/img/girl-2.png"); 
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-menu">
+        <img src="img/logo.png" alt="Anne Sweet" class="logo">
+        <nav class="nav">
+          <a href="#articles">Статьи</a>
+          <a href="#about">Обо мне</a>
+          <a href="#portfolio">Портфолио</a>
+          <a href="#contact-me">Написать мне</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="article">
+        <h1>Как себя мотивировать</h1>
+        <div class="tags">
+          <p>Теги: путешествия, друзья 
+            <date>29.09.2020</date>
+          </p>
+        </div>
+        <article class="text">
+          <p>Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль.  Как гены и мозг мешают нам бороться с соблазнами» Ирины Якутенко.</p>
+          <p>Согласно этой теории, человеческое поведение контролируют две системы: BAS (Behavior Activation System) и BIS (Behavior Inhibition System), каждая из них обусловлена генетически. Грей использовал её для понимания того, как вознаграждение или наказание связаны с беспокойством и импульсивностью. Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно понять, какие стимулы использовать для эффективной мотивации.</p>
+          <figure>
+            <img src="/img/article-image.png">
+            <figcaption>
+              Моё поведение регулируется больше BAS, поэтому при планировании целей я всегда использую позитивный стимул.
+            </figcaption>
+          </figure>
+          <p>BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация людей, чье поведение в основном определяется этой системой, направлена на получение вознаграждения. Они стремятся получить одобрение и награду за свои действия. Такие люди более мотивированы в учебе и развитии разных навыков. Однако носители активной BAS склонны к импульсивности и желанию немедленного вознаграждения, что может мешать долгосрочной работе.
+          BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.</p>
+          <p>Определив, к какому типу относится поведение, вы узнаете, какие стимулы использовать для достижения поставленной цели. Например, я решила выучить английский — само изучение не является целью, поэтому нужно правильно её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не потеряюсь в новой стране. И это можно использовать в различных сферах жизни.</p>
+        </article>
+        <div class="media-links">
+          <div class="likes">
+            <!-- <img src="/icons/like.png" class="icon like">-->
+            <!-- <svg class="like-icon" width="50" height="50">
+              <use xlink:href="icons/like.svg#like"></use>
+          </svg> -->
+            <span class="number">16</span>
+          </div>
+          <div class="socials">
+            <img src="/icons/twitter.png" class="icon">
+            <img src="/icons/facebook.png" class="icon">
+            <img src="/icons/vk.png" class="icon">
+          </div>
+        </div>
+        <div class="to-articles">Ко всем статьям 
+          <img src="/icons/Arrow.png">
+        </div>
+      </section>
+      <section class="comments"> 
+        <div class="comment-feed">
+          <div class="comment">
+            <div class="comment-header">
+              <img src="/img/avatar-1.png" alt="Иван Петров" class="avatar">
+              <h4>Иван Петров</h4>
+            </div>
+            <p>Отличная статья! Спасибо.</p>
+          </div>
+          <div class="comment">
+            <div class="comment-header">
+              <img src="/img/avatar-2.png" alt="Ксения Ксения" class="avatar">
+              <h4>Ксения Ксения</h4>
+            </div>
+            <p>Отличный текст, добавила в закладки.</p>
+          </div>
+          <div class="comment">
+            <div class="comment-header">
+              <img src="/img/avatar-3.png" alt="Иван Иванов" class="avatar">
+              <h4>Иван Иванов</h4>
+            </div>
+            <p>Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
+          </div>
+        </div>
+        <div class="leave-comment">
+          <h2>Оставить комментарий</h2>
+          <form class="comment-form" method="post">
+            <div class="comment-column first-column">
+              <input class="name" type="text" placeholder="Имя" minlength="10" maxlength="200" required>
+              <input class="email" type="email" placeholder="Почта" minlength="10" maxlength="200" required>
+              <button type="submit" class="submit-btn">Отправить</button>
+            </div>
+            <div class="comment-column">
+              <textarea class="comment-field" placeholder="Написать комментарий..." rows="10" minlength="10" maxlength="200"></textarea>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-menu">
+        <ul>
+          <li>ВК</li>
+          <li>Телеграм</li>
+          <li>Инстаграм</li>
+          <li>Твиттер</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/article.js"></script>
+</body>
+</html>
